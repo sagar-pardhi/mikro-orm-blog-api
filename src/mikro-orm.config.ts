@@ -4,7 +4,7 @@ import { TsMorphMetadataProvider } from "@mikro-orm/reflection";
 export default defineConfig({
   dbName: "sqlite.db",
   entities: ["dist/**/*.entity.js"],
-  entitiesTs: ["dist/**/*.entity.ts"],
+  entitiesTs: ["src/**/*.entity.ts"],
   metadataProvider: TsMorphMetadataProvider,
   debug: true,
 });
